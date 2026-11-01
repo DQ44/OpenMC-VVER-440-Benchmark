@@ -1,0 +1,330 @@
+<?xml version='1.0' encoding='utf-8'?>
+<model>
+  <materials>
+    <material id="1" name="E110">
+      <density units="g/cm3" value="6.55"/>
+      <nuclide name="Zr90" wo="0.5008750287562052"/>
+      <nuclide name="Zr91" wo="0.11044480626172955"/>
+      <nuclide name="Zr92" wo="0.17067308625771896"/>
+      <nuclide name="Zr94" wo="0.17672832869366825"/>
+      <nuclide name="Zr96" wo="0.029078750030678165"/>
+      <nuclide name="Nb93" wo="0.01"/>
+      <nuclide name="O16" wo="0.0009995972146279342"/>
+      <nuclide name="O17" wo="4.0278537206579547e-07"/>
+      <nuclide name="Fe54" wo="2.822779111353428e-05"/>
+      <nuclide name="Fe56" wo="0.0004595076438978123"/>
+      <nuclide name="Fe57" wo="1.0801843068373182e-05"/>
+      <nuclide name="Fe58" wo="1.4627219202802943e-06"/>
+      <nuclide name="C0" wo="0.0002"/>
+    </material>
+    <material id="2" name="E125">
+      <density units="g/cm3" value="6.55"/>
+      <nuclide name="Zr90" wo="0.4932691111298202"/>
+      <nuclide name="Zr91" wo="0.10876767314376443"/>
+      <nuclide name="Zr92" wo="0.16808137103817472"/>
+      <nuclide name="Zr94" wo="0.17404466304231672"/>
+      <nuclide name="Zr96" wo="0.028637181645923993"/>
+      <nuclide name="Nb93" wo="0.025"/>
+      <nuclide name="O16" wo="0.0009995972146279342"/>
+      <nuclide name="O17" wo="4.0278537206579547e-07"/>
+      <nuclide name="Fe54" wo="2.822779111353428e-05"/>
+      <nuclide name="Fe56" wo="0.0004595076438978123"/>
+      <nuclide name="Fe57" wo="1.0801843068373182e-05"/>
+      <nuclide name="Fe58" wo="1.4627219202802943e-06"/>
+      <nuclide name="C0" wo="0.0002"/>
+    </material>
+    <material id="3" name="Moderator">
+      <density units="g/cm3" value="0.777537"/>
+      <nuclide ao="0.66639619929" name="H1"/>
+      <nuclide ao="0.00010380071" name="H2"/>
+      <nuclide ao="0.3330737172" name="O16"/>
+      <nuclide ao="0.0001262828" name="O17"/>
+      <nuclide ao="5.8e-05" name="B10"/>
+      <nuclide ao="0.000234" name="B11"/>
+      <sab name="c_H_in_H2O"/>
+    </material>
+    <material depletable="true" id="4" name="fuel_1p6">
+      <density units="atom/cm3" value="6.960391203e+22"/>
+      <nuclide ao="66.6666551443258" name="O16"/>
+      <nuclide ao="0.004338879686386502" name="U234"/>
+      <nuclide ao="0.5400443581935261" name="U235"/>
+      <nuclide ao="32.788961617794286" name="U238"/>
+      <nuclide ao="0.0" name="Gd154"/>
+      <nuclide ao="0.0" name="Gd155"/>
+      <nuclide ao="0.0" name="Gd156"/>
+      <nuclide ao="0.0" name="Gd157"/>
+      <nuclide ao="0.0" name="Gd158"/>
+    </material>
+    <material depletable="true" id="5" name="fuel_2p4">
+      <density units="atom/cm3" value="6.961036098999999e+22"/>
+      <nuclide ao="66.66665614141358" name="O16"/>
+      <nuclide ao="0.006507637563682171" name="U234"/>
+      <nuclide ao="0.809981433771042" name="U235"/>
+      <nuclide ao="32.516854787251695" name="U238"/>
+      <nuclide ao="0.0" name="Gd154"/>
+      <nuclide ao="0.0" name="Gd155"/>
+      <nuclide ao="0.0" name="Gd156"/>
+      <nuclide ao="0.0" name="Gd157"/>
+      <nuclide ao="0.0" name="Gd158"/>
+    </material>
+    <material depletable="true" id="6" name="fuel_3p6">
+      <density units="atom/cm3" value="6.961982586e+22"/>
+      <nuclide ao="66.6666419036056" name="O16"/>
+      <nuclide ao="0.009759949721310609" name="U234"/>
+      <nuclide ao="1.2147847104655198" name="U235"/>
+      <nuclide ao="32.10881343620758" name="U238"/>
+      <nuclide ao="0.0" name="Gd154"/>
+      <nuclide ao="0.0" name="Gd155"/>
+      <nuclide ao="0.0" name="Gd156"/>
+      <nuclide ao="0.0" name="Gd157"/>
+      <nuclide ao="0.0" name="Gd158"/>
+    </material>
+    <material depletable="true" id="7" name="fuel_4p0">
+      <density units="atom/cm3" value="6.96229458e+22"/>
+      <nuclide ao="66.6666706883293" name="O16"/>
+      <nuclide ao="0.010843838785115007" name="U234"/>
+      <nuclide ao="1.3496929628622523" name="U235"/>
+      <nuclide ao="31.972792510023325" name="U238"/>
+      <nuclide ao="0.0" name="Gd154"/>
+      <nuclide ao="0.0" name="Gd155"/>
+      <nuclide ao="0.0" name="Gd156"/>
+      <nuclide ao="0.0" name="Gd157"/>
+      <nuclide ao="0.0" name="Gd158"/>
+    </material>
+    <material depletable="true" id="8" name="fuel_4p4">
+      <density units="atom/cm3" value="6.962616473000001e+22"/>
+      <nuclide ao="66.66660468805058" name="O16"/>
+      <nuclide ao="0.011927599390551694" name="U234"/>
+      <nuclide ao="1.4845855778619732" name="U235"/>
+      <nuclide ao="31.836882134696893" name="U238"/>
+      <nuclide ao="0.0" name="Gd154"/>
+      <nuclide ao="0.0" name="Gd155"/>
+      <nuclide ao="0.0" name="Gd156"/>
+      <nuclide ao="0.0" name="Gd157"/>
+      <nuclide ao="0.0" name="Gd158"/>
+    </material>
+    <material depletable="true" id="9" name="fuel_4p0Gd">
+      <density units="atom/cm3" value="6.948775328e+22"/>
+      <nuclide ao="67.05785955150685" name="O16"/>
+      <nuclide ao="0.010500958306418853" name="U234"/>
+      <nuclide ao="1.3070159231373553" name="U235"/>
+      <nuclide ao="30.961858722510133" name="U238"/>
+      <nuclide ao="0.036321220371452474" name="Gd154"/>
+      <nuclide ao="0.024658445828513623" name="Gd155"/>
+      <nuclide ao="0.34105290330089083" name="Gd156"/>
+      <nuclide ao="0.26073227503837926" name="Gd157"/>
+      <nuclide ao="2.8782050154090113e-21" name="Gd158"/>
+    </material>
+  </materials>
+  <geometry>
+    <cell id="1" material="4" region="-1" universe="1"/>
+    <cell id="2" material="1" region="1 -2" universe="1"/>
+    <cell id="3" material="3" name="Material&#10;&#9;ID             =&#9;4&#10;&#9;Name           =&#9;fuel_1p6&#10;&#9;Temperature    =&#9;None&#10;&#9;Density        =&#9;6.960391203e+22 [atom/cm3]&#10;&#9;Volume         =&#9;None [cm^3]&#10;&#9;Depletable     =&#9;True&#10;&#9;S(a,b) Tables  &#10;&#9;Nuclides       &#10;&#9;O16            =&#9;66.6666551443258 [ao]&#10;&#9;U234           =&#9;0.004338879686386502 [ao]&#10;&#9;U235           =&#9;0.5400443581935261 [ao]&#10;&#9;U238           =&#9;32.788961617794286 [ao]&#10;&#9;Gd154          =&#9;0.0          [ao]&#10;&#9;Gd155          =&#9;0.0          [ao]&#10;&#9;Gd156          =&#9;0.0          [ao]&#10;&#9;Gd157          =&#9;0.0          [ao]&#10;&#9;Gd158          =&#9;0.0          [ao]&#10;" region="2" universe="1"/>
+    <cell id="4" material="5" region="-3" universe="2"/>
+    <cell id="5" material="1" region="3 -4" universe="2"/>
+    <cell id="6" material="3" name="Material&#10;&#9;ID             =&#9;5&#10;&#9;Name           =&#9;fuel_2p4&#10;&#9;Temperature    =&#9;None&#10;&#9;Density        =&#9;6.961036098999999e+22 [atom/cm3]&#10;&#9;Volume         =&#9;None [cm^3]&#10;&#9;Depletable     =&#9;True&#10;&#9;S(a,b) Tables  &#10;&#9;Nuclides       &#10;&#9;O16            =&#9;66.66665614141358 [ao]&#10;&#9;U234           =&#9;0.006507637563682171 [ao]&#10;&#9;U235           =&#9;0.809981433771042 [ao]&#10;&#9;U238           =&#9;32.516854787251695 [ao]&#10;&#9;Gd154          =&#9;0.0          [ao]&#10;&#9;Gd155          =&#9;0.0          [ao]&#10;&#9;Gd156          =&#9;0.0          [ao]&#10;&#9;Gd157          =&#9;0.0          [ao]&#10;&#9;Gd158          =&#9;0.0          [ao]&#10;" region="4" universe="2"/>
+    <cell id="7" material="6" region="-5" universe="3"/>
+    <cell id="8" material="1" region="5 -6" universe="3"/>
+    <cell id="9" material="3" name="Material&#10;&#9;ID             =&#9;6&#10;&#9;Name           =&#9;fuel_3p6&#10;&#9;Temperature    =&#9;None&#10;&#9;Density        =&#9;6.961982586e+22 [atom/cm3]&#10;&#9;Volume         =&#9;None [cm^3]&#10;&#9;Depletable     =&#9;True&#10;&#9;S(a,b) Tables  &#10;&#9;Nuclides       &#10;&#9;O16            =&#9;66.6666419036056 [ao]&#10;&#9;U234           =&#9;0.009759949721310609 [ao]&#10;&#9;U235           =&#9;1.2147847104655198 [ao]&#10;&#9;U238           =&#9;32.10881343620758 [ao]&#10;&#9;Gd154          =&#9;0.0          [ao]&#10;&#9;Gd155          =&#9;0.0          [ao]&#10;&#9;Gd156          =&#9;0.0          [ao]&#10;&#9;Gd157          =&#9;0.0          [ao]&#10;&#9;Gd158          =&#9;0.0          [ao]&#10;" region="6" universe="3"/>
+    <cell id="10" material="7" region="-7" universe="4"/>
+    <cell id="11" material="1" region="7 -8" universe="4"/>
+    <cell id="12" material="3" name="Material&#10;&#9;ID             =&#9;7&#10;&#9;Name           =&#9;fuel_4p0&#10;&#9;Temperature    =&#9;None&#10;&#9;Density        =&#9;6.96229458e+22 [atom/cm3]&#10;&#9;Volume         =&#9;None [cm^3]&#10;&#9;Depletable     =&#9;True&#10;&#9;S(a,b) Tables  &#10;&#9;Nuclides       &#10;&#9;O16            =&#9;66.6666706883293 [ao]&#10;&#9;U234           =&#9;0.010843838785115007 [ao]&#10;&#9;U235           =&#9;1.3496929628622523 [ao]&#10;&#9;U238           =&#9;31.972792510023325 [ao]&#10;&#9;Gd154          =&#9;0.0          [ao]&#10;&#9;Gd155          =&#9;0.0          [ao]&#10;&#9;Gd156          =&#9;0.0          [ao]&#10;&#9;Gd157          =&#9;0.0          [ao]&#10;&#9;Gd158          =&#9;0.0          [ao]&#10;" region="8" universe="4"/>
+    <cell id="13" material="8" region="-9" universe="5"/>
+    <cell id="14" material="1" region="9 -10" universe="5"/>
+    <cell id="15" material="3" name="Material&#10;&#9;ID             =&#9;8&#10;&#9;Name           =&#9;fuel_4p4&#10;&#9;Temperature    =&#9;None&#10;&#9;Density        =&#9;6.962616473000001e+22 [atom/cm3]&#10;&#9;Volume         =&#9;None [cm^3]&#10;&#9;Depletable     =&#9;True&#10;&#9;S(a,b) Tables  &#10;&#9;Nuclides       &#10;&#9;O16            =&#9;66.66660468805058 [ao]&#10;&#9;U234           =&#9;0.011927599390551694 [ao]&#10;&#9;U235           =&#9;1.4845855778619732 [ao]&#10;&#9;U238           =&#9;31.836882134696893 [ao]&#10;&#9;Gd154          =&#9;0.0          [ao]&#10;&#9;Gd155          =&#9;0.0          [ao]&#10;&#9;Gd156          =&#9;0.0          [ao]&#10;&#9;Gd157          =&#9;0.0          [ao]&#10;&#9;Gd158          =&#9;0.0          [ao]&#10;" region="10" universe="5"/>
+    <cell id="16" material="9" region="-11" universe="6"/>
+    <cell id="17" material="1" region="11 -12" universe="6"/>
+    <cell id="18" material="3" name="Material&#10;&#9;ID             =&#9;9&#10;&#9;Name           =&#9;fuel_4p0Gd&#10;&#9;Temperature    =&#9;None&#10;&#9;Density        =&#9;6.948775328e+22 [atom/cm3]&#10;&#9;Volume         =&#9;None [cm^3]&#10;&#9;Depletable     =&#9;True&#10;&#9;S(a,b) Tables  &#10;&#9;Nuclides       &#10;&#9;O16            =&#9;67.05785955150685 [ao]&#10;&#9;U234           =&#9;0.010500958306418853 [ao]&#10;&#9;U235           =&#9;1.3070159231373553 [ao]&#10;&#9;U238           =&#9;30.961858722510133 [ao]&#10;&#9;Gd154          =&#9;0.036321220371452474 [ao]&#10;&#9;Gd155          =&#9;0.024658445828513623 [ao]&#10;&#9;Gd156          =&#9;0.34105290330089083 [ao]&#10;&#9;Gd157          =&#9;0.26073227503837926 [ao]&#10;&#9;Gd158          =&#9;2.8782050154090113e-21 [ao]&#10;" region="12" universe="6"/>
+    <cell id="19" material="3" region="-13" universe="7"/>
+    <cell id="20" material="1" region="13 -14" universe="7"/>
+    <cell id="21" material="3" name="Material&#10;&#9;ID             =&#9;3&#10;&#9;Name           =&#9;Moderator&#10;&#9;Temperature    =&#9;None&#10;&#9;Density        =&#9;0.777537 [g/cm3]&#10;&#9;Volume         =&#9;None [cm^3]&#10;&#9;Depletable     =&#9;False&#10;&#9;S(a,b) Tables  &#10;&#9;S(a,b)         =&#9;('c_H_in_H2O', 1.0)&#10;&#9;Nuclides       &#10;&#9;H1             =&#9;0.66639619929 [ao]&#10;&#9;H2             =&#9;0.00010380071 [ao]&#10;&#9;O16            =&#9;0.3330737172 [ao]&#10;&#9;O17            =&#9;0.0001262828 [ao]&#10;&#9;B10            =&#9;5.8e-05      [ao]&#10;&#9;B11            =&#9;0.000234     [ao]&#10;" region="14" universe="7"/>
+    <cell id="22" material="3" name="Coolant outer" universe="8"/>
+    <cell id="23" material="2" region="~(-21 22 -23 -24 25 26) (-15 16 -17 -18 19 20)" universe="12"/>
+    <cell fill="9" id="24" region="-27 28 -29 -30 31 32" universe="10"/>
+    <cell fill="11" id="25" region="-33 34 -35 -36 37 38" universe="12"/>
+    <cell fill="13" id="26" region="-39 40 -41 -42 43 44" universe="14"/>
+    <cell fill="17" id="28" region="-51" universe="0"/>
+    <hex_lattice id="9" n_rings="7" name="FA_1.6%">
+      <pitch>1.23</pitch>
+      <outer>8</outer>
+      <center>0 0</center>
+      <universes>
+      1
+     1 1
+    1 1 1
+   1 1 1 1
+  1 1 1 1 1
+ 1 1 1 1 1 1
+1 1 1 1 1 1 1
+ 1 1 1 1 1 1
+1 1 1 1 1 1 1
+ 1 1 1 1 1 1
+1 1 1 1 1 1 1
+ 1 1 1 1 1 1
+1 1 1 7 1 1 1
+ 1 1 1 1 1 1
+1 1 1 1 1 1 1
+ 1 1 1 1 1 1
+1 1 1 1 1 1 1
+ 1 1 1 1 1 1
+1 1 1 1 1 1 1
+ 1 1 1 1 1 1
+  1 1 1 1 1
+   1 1 1 1
+    1 1 1
+     1 1
+      1</universes>
+    </hex_lattice>
+    <hex_lattice id="11" n_rings="7" name="FA_2.4%">
+      <pitch>1.23</pitch>
+      <outer>8</outer>
+      <center>0 0</center>
+      <universes>
+      2
+     2 2
+    2 2 2
+   2 2 2 2
+  2 2 2 2 2
+ 2 2 2 2 2 2
+2 2 2 2 2 2 2
+ 2 2 2 2 2 2
+2 2 2 2 2 2 2
+ 2 2 2 2 2 2
+2 2 2 2 2 2 2
+ 2 2 2 2 2 2
+2 2 2 7 2 2 2
+ 2 2 2 2 2 2
+2 2 2 2 2 2 2
+ 2 2 2 2 2 2
+2 2 2 2 2 2 2
+ 2 2 2 2 2 2
+2 2 2 2 2 2 2
+ 2 2 2 2 2 2
+  2 2 2 2 2
+   2 2 2 2
+    2 2 2
+     2 2
+      2</universes>
+    </hex_lattice>
+    <hex_lattice id="13" n_rings="7" name="FA_4.25%">
+      <pitch>1.23</pitch>
+      <outer>8</outer>
+      <center>0 0</center>
+      <universes>
+      5
+     4 4
+    4 6 4
+   4 3 3 4
+  4 3 3 3 4
+ 4 3 3 3 3 4
+5 3 3 3 3 3 5
+ 6 3 3 3 3 6
+4 3 3 3 3 3 4
+ 3 3 3 3 3 3
+4 3 3 3 3 3 4
+ 3 3 3 3 3 3
+4 3 3 7 3 3 4
+ 3 3 3 3 3 3
+4 3 3 3 3 3 4
+ 3 3 3 3 3 3
+4 3 3 3 3 3 4
+ 6 3 3 3 3 6
+5 3 3 3 3 3 5
+ 4 3 3 3 3 4
+  4 3 3 3 4
+   4 3 3 4
+    4 6 4
+     4 4
+      5</universes>
+    </hex_lattice>
+    <hex_lattice id="17" n_rings="12" name="Core" orientation="x">
+      <pitch>14.7</pitch>
+      <outer>8</outer>
+      <center>0 0</center>
+      <universes>
+                      8   8   8   8   14  14  14  14  8   8   8   8 
+                    8   8   10  10  12  14  10  14  12  10  10  8   8 
+                  8   10  10  14  14  10  12  12  10  14  14  10  10  8 
+                8   10  14  12  12  10  12  10  12  10  12  12  14  10  8 
+              14  12  14  12  12  10  10  10  10  10  10  12  12  14  12  14
+            14  14  10  10  10  12  10  10  12  10  10  12  10  10  10  14  14
+          14  10  12  12  10  10  10  10  10  10  10  10  10  10  12  12  10  14
+        14  14  12  10  10  10  10  10  10  12  10  10  10  10  10  10  12  14  14
+      8   12  10  12  10  12  10  10  12  10  10  12  10  10  12  10  12  10  12  8 
+    8   10  14  10  10  10  10  12  10  10  10  10  10  12  10  10  10  10  14  10  8 
+  8   10  14  12  10  10  10  10  10  10  10  10  10  10  10  10  10  10  12  14  10  8 
+8   8   10  12  12  12  10  10  12  10  10  12  10  10  12  10  10  12  12  12  10  8   8 
+  8   10  14  12  10  10  10  10  10  10  10  10  10  10  10  10  10  10  12  14  10  8 
+    8   10  14  10  10  10  10  12  10  10  10  10  10  12  10  10  10  10  14  10  8 
+      8   12  10  12  10  12  10  10  12  10  10  12  10  10  12  10  12  10  12  8 
+        14  14  12  10  10  10  10  10  10  12  10  10  10  10  10  10  12  14  14
+          14  10  12  12  10  10  10  10  10  10  10  10  10  10  12  12  10  14
+            14  14  10  10  10  12  10  10  12  10  10  12  10  10  10  14  14
+              14  12  14  12  12  10  10  10  10  10  10  12  12  14  12  14
+                8   10  14  12  12  10  12  10  12  10  12  12  14  10  8 
+                  8   10  10  14  14  10  12  12  10  14  14  10  10  8 
+                    8   8   10  10  12  14  10  14  12  10  10  8   8 
+                      8   8   8   8   14  14  14  14  8   8   8   8 </universes>
+    </hex_lattice>
+    <surface coeffs="0.0 0.0 0.38" id="1" type="z-cylinder"/>
+    <surface coeffs="0.0 0.0 0.455" id="2" type="z-cylinder"/>
+    <surface coeffs="0.0 0.0 0.38" id="3" type="z-cylinder"/>
+    <surface coeffs="0.0 0.0 0.455" id="4" type="z-cylinder"/>
+    <surface coeffs="0.0 0.0 0.38" id="5" type="z-cylinder"/>
+    <surface coeffs="0.0 0.0 0.455" id="6" type="z-cylinder"/>
+    <surface coeffs="0.0 0.0 0.38" id="7" type="z-cylinder"/>
+    <surface coeffs="0.0 0.0 0.455" id="8" type="z-cylinder"/>
+    <surface coeffs="0.0 0.0 0.38" id="9" type="z-cylinder"/>
+    <surface coeffs="0.0 0.0 0.455" id="10" type="z-cylinder"/>
+    <surface coeffs="0.0 0.0 0.38" id="11" type="z-cylinder"/>
+    <surface coeffs="0.0 0.0 0.455" id="12" type="z-cylinder"/>
+    <surface coeffs="0.0 0.0 0.38" id="13" type="z-cylinder"/>
+    <surface coeffs="0.0 0.0 0.455" id="14" type="z-cylinder"/>
+    <surface coeffs="6.06375" id="15" type="x-plane"/>
+    <surface coeffs="-6.06375" id="16" type="x-plane"/>
+    <surface coeffs="0.5773502691896257 1.0 0.0 7.001815389597186" id="17" type="plane"/>
+    <surface coeffs="-0.5773502691896257 1.0 0.0 7.001815389597186" id="18" type="plane"/>
+    <surface coeffs="-0.5773502691896257 1.0 0.0 -7.001815389597186" id="19" type="plane"/>
+    <surface coeffs="0.5773502691896257 1.0 0.0 -7.001815389597186" id="20" type="plane"/>
+    <surface coeffs="6.614999999999998" id="21" type="x-plane"/>
+    <surface coeffs="-6.614999999999998" id="22" type="x-plane"/>
+    <surface coeffs="0.5773502691896257 1.0 0.0 7.638344061378747" id="23" type="plane"/>
+    <surface coeffs="-0.5773502691896257 1.0 0.0 7.638344061378747" id="24" type="plane"/>
+    <surface coeffs="-0.5773502691896257 1.0 0.0 -7.638344061378747" id="25" type="plane"/>
+    <surface coeffs="0.5773502691896257 1.0 0.0 -7.638344061378747" id="26" type="plane"/>
+    <surface coeffs="8.268749999999999" id="27" type="x-plane"/>
+    <surface coeffs="-8.268749999999999" id="28" type="x-plane"/>
+    <surface coeffs="0.5773502691896257 1.0 0.0 9.547930076723436" id="29" type="plane"/>
+    <surface coeffs="-0.5773502691896257 1.0 0.0 9.547930076723436" id="30" type="plane"/>
+    <surface coeffs="-0.5773502691896257 1.0 0.0 -9.547930076723436" id="31" type="plane"/>
+    <surface coeffs="0.5773502691896257 1.0 0.0 -9.547930076723436" id="32" type="plane"/>
+    <surface coeffs="8.268749999999999" id="33" type="x-plane"/>
+    <surface coeffs="-8.268749999999999" id="34" type="x-plane"/>
+    <surface coeffs="0.5773502691896257 1.0 0.0 9.547930076723436" id="35" type="plane"/>
+    <surface coeffs="-0.5773502691896257 1.0 0.0 9.547930076723436" id="36" type="plane"/>
+    <surface coeffs="-0.5773502691896257 1.0 0.0 -9.547930076723436" id="37" type="plane"/>
+    <surface coeffs="0.5773502691896257 1.0 0.0 -9.547930076723436" id="38" type="plane"/>
+    <surface coeffs="8.268749999999999" id="39" type="x-plane"/>
+    <surface coeffs="-8.268749999999999" id="40" type="x-plane"/>
+    <surface coeffs="0.5773502691896257 1.0 0.0 9.547930076723436" id="41" type="plane"/>
+    <surface coeffs="-0.5773502691896257 1.0 0.0 9.547930076723436" id="42" type="plane"/>
+    <surface coeffs="-0.5773502691896257 1.0 0.0 -9.547930076723436" id="43" type="plane"/>
+    <surface coeffs="0.5773502691896257 1.0 0.0 -9.547930076723436" id="44" type="plane"/>
+    <surface boundary="reflective" coeffs="0.0 0.0 161.7" id="51" type="z-cylinder"/>
+  </geometry>
+  <settings>
+    <run_mode>eigenvalue</run_mode>
+    <particles>200000</particles>
+    <batches>10</batches>
+    <inactive>1</inactive>
+    <generations_per_batch>1</generations_per_batch>
+    <source particle="neutron" strength="1.0" type="independent">
+      <space type="fission">
+        <parameters>-100 -100 -1 100 100 1</parameters>
+      </space>
+    </source>
+    <temperature_default>543.15</temperature_default>
+    <temperature_method>interpolation</temperature_method>
+    <temperature_range>300 1200</temperature_range>
+  </settings>
+  </model>
